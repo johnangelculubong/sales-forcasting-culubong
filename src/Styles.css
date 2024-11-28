@@ -1,0 +1,33 @@
+body{
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+.submit-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10vh;
+    cursor: pointer;
+    background-color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 20px;
+    border: solid white 0.5px;
+    color: white;
+}
+.submit-button:hover{
+    background-color: #1F509A;
+}
+.train-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 20px;
+    border: solid white 0.5px;
+    color: white;
+    cursor: pointer;
+}
+.train-button:hover{
+    background-color: #1F509A;
+}

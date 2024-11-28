@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Papa from 'papaparse';
+import './Styles.css';
 
 const FileUploader = ({ onDataProcessed }) => {
   const [file, setFile] = useState(null);
@@ -23,7 +24,7 @@ const FileUploader = ({ onDataProcessed }) => {
   return (
     <div>
       <input type="file" accept=".csv" onChange={handleFileChange} />
-      <button onClick={processFile}>Submit File</button>
+      <button  className="submit-button"  onClick={processFile}>Submit File</button>
     </div>
   );
 };

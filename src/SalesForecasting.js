@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import * as tf from '@tensorflow/tfjs';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, PointElement, Title, Tooltip, Legend } from 'chart.js';
+import './Styles.css';
 
 // Register the necessary components
 ChartJS.register(
@@ -123,7 +124,7 @@ const SalesForecasting = ({ data }) => {
 
   return (
     <div>
-      <button onClick={trainAndPredict}>Train & Predict</button>
+      <button className="train-button" onClick={trainAndPredict}>Train & Predict</button>
       {chartData && (
         <div style={{ width: '800px', height: '500px', margin: 'auto' }}>
           <Line
